@@ -1,0 +1,234 @@
+body {
+    padding:0;
+    margin: 0;
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 16px;
+    color: #777;
+    background: url('../images/hypnotize.png');
+    background-attachment: fixed;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #4aaaa5;
+}
+
+header, .about-me, .portfolio, .contact {
+    background-color: #fff;
+}
+
+header {
+    border-bottom: 1px solid #ccc;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+}
+
+header ul {
+    padding-left: 0;
+    list-style: none;
+    float: right;
+    display: flex;
+    align-self: center;
+}
+
+header li {
+    float: left;
+    padding: 0 20px;
+    border-right: 1px solid #ccc;
+}
+
+header li a {
+    padding-bottom: 4px;
+    border-bottom: 2px solid #fff;
+    text-decoration: none;
+    color: #777;
+    transition: all 0.3s ease-in;
+}
+
+header li a:hover {
+    border-bottom-color: #4A97DD;
+}
+
+header li:last-of-type {
+    padding-right: 0;
+    border-right: none;
+}
+
+a.logo-link {
+    text-decoration: none;
+}
+
+footer {
+    background-color: #666;
+    border-top: 7px solid #4aaaa5;
+    color: #A8B0BA;
+    font-size: 12px;
+}
+
+footer p {
+    margin-top: 35px;
+    text-align: center;
+    padding-bottom: 6px;
+    margin-bottom: 0px;
+}
+
+.logo {
+    display: block;
+    color: #fff;
+    background-color: #4aaaa5;
+    padding: 28px;
+    margin: 0;
+    font-size: 22px;
+    transition: all 0.3s ease-in;
+    text-align: center;
+}
+
+.logo:hover, button:hover, figure:hover figcaption h3 {
+    background-color: #4A97DD;
+}
+
+.about-me, .portfolio, .contact {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 45px 30px;
+    line-height: 1.875;
+    border: 1px solid #ddd;
+}
+
+.content-heading {
+    font-size: 22px;
+    padding-bottom: 30px;
+    border-bottom: 3px solid #ddd;
+    margin-top: 0;
+    margin-bottom: 25px;
+    transition: all 0.3s ease-in;
+    cursor: none;
+}
+
+.content-heading:hover {
+    color: #4A97DD;
+}
+
+.headshot {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.portfolio img {
+    max-width: 100%;
+    height: auto;
+}
+
+.portfolio figure {
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.portfolio figcaption {
+    position: relative;
+    bottom: 65px;
+    left: 0;
+    right: 0;
+    transition: all 0.3s ease-in;
+}
+
+figure:hover figcaption {
+    bottom: 45px;
+}
+
+
+.portfolio figcaption h3 {
+    color: #fff;
+    background-color: #4aaaa5;
+    text-align: center;
+    margin: 0;
+    transition: all 0.3s ease-in;
+}
+
+input, textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+input {
+    height: 35px;
+    text-indent: 12px;
+}
+
+input::placeholder {
+    text-indent: 12px;
+    font-size: 14px;
+}
+
+textarea {
+    border-color: #ddd;
+}
+
+button {
+    background-color: #4aaaa5;
+    color: #fff;
+    font-size: 16px;
+    padding: 14px 30px;
+    border: none;
+    transition: all 0.3s ease-in;
+}
+
+@media screen and (min-width: 640px) {
+    .container {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    header .container {
+        flex-direction: row;
+    }
+    
+    header ul {
+        flex-direction: row;
+        margin-left: auto;
+    }
+    
+    .logo {
+        display: inline-block;
+    }
+    
+    .headshot {
+        max-height: 150px;
+        float: left;
+        margin: 0 25px 25px 0
+    }
+    
+    .portfolio figure {
+        display: inline-block;
+        max-width: 49%;
+    }
+
+    .portfolio img {
+        width: auto;
+    }
+}
+
+@media screen and (min-width: 768px) { 
+
+
+}
+
+@media screen and (min-width: 980px) {
+
+    .portfolio img {
+        width: auto;
+        height: 205px;
+    }
+
+    .container {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+}
+
